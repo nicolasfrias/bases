@@ -3,12 +3,100 @@
 
 <head>
   <title>Motel los Troncos</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="css/estilos.css">
+ <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
 </head>
 
 <body>
-<h1>contenidos:</h1>
+<nav class="navbar navbar-toggleable-md navbar-inverse 
+ fixed-top  ">
+    <!-- el inverse es para que cambien los colores y el static top es para
+    que el menu se mantenga en la parte de arriba de la pagina -->
+    <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#" class="navbar-brand "><img src="img/motel.jpg" style="max-width: 100px;" /></a> 
+     <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class=" navbar-nav ml-auto ">
+            <li class=" nav-item active ">
+            		<a  data-scroll="data-scroll" href="contenido.html" class="nav-link ">Contenido<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item">
+            		<a data-scroll="data-scroll" href="#login" class="nav-link">login</a>
+            </li>
+
+            <li class="nav-item">
+            		<a data-scroll="data-scroll" href="#" class="nav-link">sitio</a>
+            </li>
+            
+            <li class="nav-item">
+              <a data-scroll="data-scroll" href="#ubicacion" class="nav-link">ingreso cliente</a>
+            </li>
+
+        </ul>
+    </div> 
+    </nav>
+
+<div class="container-fluid pt-10" style="height: 100vh;padding-top: 100px">
+	<h2 style="padding-top: 40px; color: black">Ingrese los datos del cliente: </h2>
+
     <p><a href="{{ url_for('ingreso') }}">click to ingresar  cliente</a></p>
 
-</body>
+    <div >
+    	 
+    <form class="row" role="form" style="color: black">
+  <div class="form-group col-xs-12 col-sm-12 col-md-8 col-lg-5" >
+    <label class="col-3 col-form-label " for="nombre cliente">Nombre</label>
+    <input type="email" class="form-control" id="nombre_cliente"
+           placeholder="Introduce el nombre">
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 ">
+    <label  for="ejemplo_password_1">Apellido</label>
+    <input type="apellido" class="form-control" id="apellido" 
+           placeholder="Apellido">
+  </div>
+  <div class="form-group  col-xs-12 col-sm-12 col-md-8 col-lg-5 ">
+    <label class="col-3 col-form-label " for="rut">Rut</label>
+    <input type="rut" class="form-control" id="rut" 
+           placeholder=" ingrese rut ej: 12333666">
+  </div>
+  <br>
+  </br>
 
+   <div class="form-group  col-xs-12 col-sm-12 col-md-8 col-lg-12 col-form-label"class="form-group">
+        <button  class="btn btn-warning offset-5"  type="submit">Enviar</button>
+      </div>  
+
+  </form>
+    </div>
+</div>
+
+
+
+</body>
+  <footer>
+  <div class="container-fluid text-center" style="background-color: grey" >
+    <p class="copyright_text">&copy; copyright 2018<br>
+    designed and developed by Los rompe telitas </p >    
+  </div>
+</footer>
+
+   <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSá/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+
+  </body>
 </html>
