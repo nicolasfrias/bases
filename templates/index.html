@@ -15,8 +15,7 @@
 <body>
 <nav class="navbar navbar-toggleable-md navbar-inverse 
  fixed-top  ">
-    <!-- el inverse es para que cambien los colores y el static top es para
-    que el menu se mantenga en la parte de arriba de la pagina -->
+    
     <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       		<span class="navbar-toggler-icon"></span>
     </button>
@@ -24,12 +23,9 @@
      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class=" navbar-nav ml-auto ">
             <li class=" nav-item active ">
-            		<a  data-scroll="data-scroll" href="contenido.html" class="nav-link ">Contenido<span class="sr-only">(current)</span></a>
+            		<a  data-scroll="data-scroll" href="contenido.html" class="nav-link ">Login<span class="sr-only">(current)</span></a>
             </li>
-            
-            <li class="nav-item">
-            		<a data-scroll="data-scroll" href="#login" class="nav-link">login</a>
-            </li>
+         
 
             <li class="nav-item">
             		<a data-scroll="data-scroll" href="#" class="nav-link">sitio</a>
@@ -44,37 +40,110 @@
     </nav>
 
 <div class="container-fluid pt-10" style="height: 100vh;padding-top: 100px">
-	<h2 style="padding-top: 40px; color: black">Ingrese los datos del cliente: </h2>
+	<h2 style="padding-top: 40px; color: black">Nueva habitacion.. </h2>
+   <div class="row">
 
-    <p><a href="{{ url_for('ingreso') }}">click to ingresar  cliente</a></p>
+			<div class="col-6 ">
+	    <h5 style="color: black">Tipo</h5>
+	   <select   class=" form-group form-label form-control" >
+	  <option>Tipo de habitacion</option>
+	  <option>simple</option>
+	  <option>jacuzzi</option>
+		</select>
+		</div>
+    	
 
-    <div >
-    	 
-    <form class="row" role="form" style="color: black">
-  <div class="form-group col-xs-12 col-sm-12 col-md-8 col-lg-5" >
-    <label class="col-3 col-form-label " for="nombre cliente">Nombre</label>
-    <input type="email" class="form-control" id="nombre_cliente"
-           placeholder="Introduce el nombre">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4 ">
-    <label  for="ejemplo_password_1">Apellido</label>
-    <input type="apellido" class="form-control" id="apellido" 
-           placeholder="Apellido">
-  </div>
-  <div class="form-group  col-xs-12 col-sm-12 col-md-8 col-lg-5 ">
-    <label class="col-3 col-form-label " for="rut">Rut</label>
-    <input type="rut" class="form-control" id="rut" 
-           placeholder=" ingrese rut ej: 12333666">
-  </div>
-  <br>
-  </br>
 
-   <div class="form-group  col-xs-12 col-sm-12 col-md-8 col-lg-12 col-form-label"class="form-group">
-        <button  class="btn btn-warning offset-5"  type="submit">Enviar</button>
-      </div>  
+	    <div class="col-6">
+	    	
+	   <h5 style="color: black">Habitacion</h5>
+	  <select  class=" form-group form-label form-control">
+	  <option>Numero de la habitacion</option>
+	  <option>1</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	  <option>6</option>
+	  <option>7</option>
+	  <option>8</option>
+	  <option>9</option>
+	  <option>10</option>
+	  <option>11</option>
+	  <option>12</option>
+	  <option>13</option>
+	  <option>14</option>
+	  <option>15</option>
+	  <option>16</option>
+	  <option>17</option>
+	  <option>18</option>
+	  <option>19</option>
+	  <option>20</option>
+	  <option>21</option>
+	  </select>
+	    </div>		
+		 <div class="col-6">
+		 	
+		<h5 style="color: black">Cantidad de horas</h5>
+		  <select  class=" form-group form-label form-control">
+		  <option>numero de horas</option>
+		  <option>2 horas</option>
+		  <option>6 horas</option>
+		  <option>10 horas</option>
+		  <option>12 horas</option>
+		  <option>4 horas</option>
+		  </select>
+		 </div>
+		<div class="col-6">
+		<h5 style="color: black">Precio</h5>
+		  <select  class="col-6	 form-group form-label form-control">
+			  <option>Precio</option>
+			  <option>$11.800</option>
+			  <option>$18.000</option>
+			  <option>$20.000</option>
+			  <option>$26.900</option>
+			  <option>$32.000</option>
+		  </select>
+    	</div>
+  
+  
 
-  </form>
-    </div>
+	    <h5 class="ml-3" style="color: black">Cortesia</h5>
+		<div class="col-12 ml-auto row">
+
+		  <select  class="col-2 form-group form-label form-control">
+		  <option>Bebida</option>
+			  <option>Sour</option>
+			  <option>Roncola</option>
+			  <option>Piscola</option>
+			  <option>Gin con gin</option>
+			  <option>Primavera</option>
+			  <option>Martini</option>
+			  <option>te</option>
+			  <option>cafe</option>
+			  </select>
+			  <select  class="col-2 ml-4 form-group form-label form-control">
+		  <option>Bebida</option>
+			  <option>Sour</option>
+			  <option>Roncola</option>
+			  <option>Piscola</option>
+			  <option>Gin con gin</option>
+			  <option>Primavera</option>
+			  <option>Martini</option>
+			  <option>te</option>
+			  <option>cafe</option>
+			  </select>
+			  <label style="color: black" class="ml-4 col-3 checkbox-inline">
+			  <input type="checkbox" id="checkboxEnLinea3" value="opcion_3">  No incluye.
+			</label>
+	 
+  		</div>
+	
+	<h5 class="ml-2" style="color: black">Incidencia</h5>
+	  <textarea class="form-control ml-auto col-6" rows="3" placeholder="comente la situacion.."></textarea>
+	  <span class="help-block">Notifique acerca cualquier  irregularidad que suted estime conveniente, no olvide seleccionar la hora ocurrida.</span>
+
+	</div>
 </div>
 
 
@@ -85,6 +154,9 @@
     <p class="copyright_text">&copy; copyright 2018<br>
     designed and developed by Los rompe telitas </p >    
   </div>
+
+
+
 </footer>
 
    <!-- Bootstrap core JavaScript
@@ -96,6 +168,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSá/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
 
 
   </body>
