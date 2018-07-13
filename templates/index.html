@@ -10,6 +10,13 @@
  <link rel="stylesheet" type="text/css" href="css/estilos.css">
  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
+
+    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        <link href="../css/bootstrap-timepicker.min.css" rel="stylesheet">
+        <script src="../js/bootstrap-timepicker.js"></script>
 </head>
 
 <body>
@@ -23,16 +30,16 @@
      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class=" navbar-nav ml-auto ">
             <li class=" nav-item active ">
-            		<a  data-scroll="data-scroll" href="contenido.html" class="nav-link ">Login<span class="sr-only">(current)</span></a>
+            		<a  data-scroll="data-scroll" href="./login.html" class="nav-link ">Login<span class="sr-only">(current)</span></a>
             </li>
          
 
             <li class="nav-item">
-            		<a data-scroll="data-scroll" href="#" class="nav-link">sitio</a>
+            		<a data-scroll="data-scroll" href="./habitaciones.html" class="nav-link">Estado Actual</a>
             </li>
             
             <li class="nav-item">
-              <a data-scroll="data-scroll" href="#ubicacion" class="nav-link">ingreso cliente</a>
+              <a data-scroll="data-scroll" href="./ingreso_cliente.html" class="nav-link">Ingreso cliente</a>
             </li>
 
         </ul>
@@ -43,7 +50,7 @@
 	<h2 style="padding-top: 40px; color: black">Nueva habitacion.. </h2>
    <div class="row">
 
-			<div class="col-6 ">
+			<div class="col-3 ">
 	    <h5 style="color: black">Tipo</h5>
 	   <select   class=" form-group form-label form-control" >
 	  <option>Tipo de habitacion</option>
@@ -54,7 +61,15 @@
     	
 
 
-	    <div class="col-6">
+		<div class="col-4">
+				<h5 style="color: black">Hora de ingreso</h5>
+				<input class=" form-control" id="inputSeleccionado" type="text" value="ej: 21:50">
+		</div>
+		<div class="col-4">
+				<h5 style="color: black">fecha</h5>
+				<input class=" form-control" id="inputSeleccionado" type="text" value="ej: 21:50">
+		</div>
+	    <div class="col-3">
 	    	
 	   <h5 style="color: black">Habitacion</h5>
 	  <select  class=" form-group form-label form-control">
@@ -82,7 +97,7 @@
 	  <option>21</option>
 	  </select>
 	    </div>		
-		 <div class="col-6">
+		 <div class="col-3">
 		 	
 		<h5 style="color: black">Cantidad de horas</h5>
 		  <select  class=" form-group form-label form-control">
@@ -94,7 +109,7 @@
 		  <option>4 horas</option>
 		  </select>
 		 </div>
-		<div class="col-6">
+		<div class="col-4">
 		<h5 style="color: black">Precio</h5>
 		  <select  class="col-6	 form-group form-label form-control">
 			  <option>Precio</option>
@@ -143,8 +158,12 @@
 	  <textarea class="form-control ml-auto col-6" rows="3" placeholder="comente la situacion.."></textarea>
 	  <span class="help-block">Notifique acerca cualquier  irregularidad que suted estime conveniente, no olvide seleccionar la hora ocurrida.</span>
 
-	</div>
+
+
+  <button type="submit" class="text-center btn btn-primary">Añadir</button>
+
 </div>
+	</div>
 
 
 
@@ -154,7 +173,6 @@
     <p class="copyright_text">&copy; copyright 2018<br>
     designed and developed by Los rompe telitas </p >    
   </div>
-
 
 
 </footer>
